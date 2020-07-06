@@ -16,8 +16,8 @@
     </style>
 </head>
 <body>
-    <h1>Verifique sua nacionalidade</h1>
-    Em qual país você está? <input type="text" name="txtPais" id="txtPais">
+    <h1>Análise </h1>
+    Em que continente você nasceu? <input type="text" name="txtPais" id="txtPais">
     <input type="button" value="Verificar" onclick="verificar()">
     <div id="resNacionalidade"></div>
 
@@ -28,12 +28,12 @@
             var nacionalidade = window.document.getElementById('resNacionalidade')
             var resposta
 
-            if (pais == 'brasil') {
-                resposta = 'brasileiro'
+            if (pais == 'Africa') {
+                resposta = 'tu é BR maluco'
             } else {
-                resposta = 'estrangeiro'
+                resposta = 'MORRE GRINGO'
             }
-            nacionalidade.innerHTML = `<p>Sua nacionalidade é <strong>${resposta}</strong></p>`
+            nacionalidade.innerHTML = `<p>De acordo com minhas análises <strong>${resposta}</strong></p>`
         }
     </script>
 </body>
