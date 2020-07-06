@@ -18,7 +18,7 @@ function carregar() {
         msg.innerHTML += '<p>Boa tarde!</p>'
     } else {
         //boa noite
-        img.src = 'images/nigth.png'
+        img.src = 'images/night.png'
         document.body.style.background = '#8f6162'
         msg.innerHTML += '<p>Boa noite!</p>'
     }
