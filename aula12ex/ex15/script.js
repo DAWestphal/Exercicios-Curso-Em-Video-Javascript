@@ -3,9 +3,19 @@ function carregar() {
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('img')
     var data = new Date()
-    var hora = data.getHours() + ':' + data.getMinutes()
-    //var hora = 1
-    msg.innerHTML = `Agora são ${hora} horas.`
+
+    var minutes = data.getMinutes()
+    var hora = data.getHours()
+    if (minutes < 10) {
+        minutes = "0"+minutes;
+    }
+    if (hora < 10) {
+        hora = "0"+hora;
+    }
+
+    var horacorrigida = data.getHours() + ':' + minutes
+     //var hora = 1
+    msg.innerHTML = `Agora são ${horacorrigida} horas.`
     if (hora >= 0 && hora < 12) {
         //bom dia
         img.src = 'images/morning.gif'
